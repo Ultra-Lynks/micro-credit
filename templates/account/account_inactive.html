@@ -1,0 +1,23 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Account Inactive" %}{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="breadcrumb-blog set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2>Logout</h2>
+          </div>
+      </div>
+  </div>
+</section>
+<h1>{% trans "Account Inactive" %}</h1>
+
+<p>{% trans "This account is inactive." %}</p>
+
+{% include 'store/footer.html' %}
+{% endblock content %}

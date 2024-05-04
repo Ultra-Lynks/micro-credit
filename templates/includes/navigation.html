@@ -1,0 +1,104 @@
+{% load static %}
+   
+<!-- Navbar -->
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
+  <div class="container-fluid py-1 px-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+      </ol>
+      {% comment %} <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6> {% endcomment %}
+    </nav>
+    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+      <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+        <div class="input-group">
+          <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+          <input type="text" class="form-control bg-white" placeholder="Type here...">
+        </div>
+      </div>
+      <ul class="navbar-nav  justify-content-end">
+        {% if request.user.is_authenticated %}
+          {% if request.user.is_superuser %}
+            <li class="nav-item d-flex align-items-center">
+              <a href="{% url 'admin:logout' %}" class="nav-link text-white font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+                <span class="d-sm-inline d-none me-3">Logout</span>
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="{% url 'admin:password_change' %}" class="nav-link text-white font-weight-bold px-0">
+                <span class="d-sm-inline d-none">Change Password</span>
+              </a>
+            </li>
+          {% else %}
+            <li class="nav-item d-flex align-items-center">
+              <a href="{% url 'logout' %}" class="nav-link text-white font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+                <span class="d-sm-inline d-none me-3">Logout</span>
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="{% url 'password_change' %}" class="nav-link text-white font-weight-bold px-0">
+                <span class="d-sm-inline d-none">Change Password</span>
+              </a>
+            </li>
+          {% endif %}
+        {% else %}
+          <li class="nav-item d-flex align-items-center">
+            <a href="{% url 'core:login' %}" class="nav-link text-white font-weight-bold px-0">
+              <i class="fa fa-user me-sm-1"></i>
+              <span class="d-sm-inline d-none">Sign In</span>
+            </a>
+          </li>
+        {% endif %}
+        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item px-3 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-white p-0">
+            <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+          </a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item dropdown pe-2 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-bell cursor-pointer" id="notifications-count" ></i>
+          </a>
+          <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+            {% for i in notifications %}
+            <li class="mb-2">
+              <a class="dropdown-item border-radius-md" href="javascript:;">
+                <div class="d-flex py-1">
+                  <div class="my-auto">
+                    <img src="{% static 'asset/img/glogo.png' %}" class="avatar avatar-sm  me-3 ">
+                  </div>
+                  <div class="d-flex flex-column justify-content-center">
+                    <h6 class="text-sm text-secondary font-weight-normal mb-1">
+                      <span class="font-weight-bold">{{i.message}}</span> from Admin
+                    </h6>
+                    <p class="text-xs text-secondary mb-0">
+                      <i class="fa fa-clock me-1"></i>
+                      {{i.broadcast_on}}
+                    </p>
+              
+                  </div>
+                </div>
+              </a>
+            </li>
+            {% endfor %}
+            {% endif %}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->

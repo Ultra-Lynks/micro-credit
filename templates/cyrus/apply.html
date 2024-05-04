@@ -1,0 +1,174 @@
+{% extends "cyrus/base.html" %}
+{% load static %}
+{% block content %}
+   
+    <main>
+        <!-- Hero Start-->
+        <div class="hero-area2  slider-height2 hero-overly2 d-flex align-items-center ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center pt-50">
+                            <h2>Apply Form</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero End -->
+        <!-- Apply Area Start -->
+        <div class="apply-area pt-150 pb-150">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="apply-wrapper">
+                            <!-- Form -->
+                            <form action="https://formspree.io/f/xoqgvkap"
+                            method="POST">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                       <div class="single-form">
+                                            <label>* LOAN AMOUNT ($) </label>
+                                            <input type="number" name="Loan amount" placeholder="Enter amount">
+                                       </div>
+                                    </div>
+                                   <!-- Nice Select -->
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                             <label>* PURPOSE OF LOAN</label>
+                                             <input type="text" name="Purpose of loan" placeholder="Enter name">
+                                        </div>
+                                     </div>
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                             <label>* Gender</label>
+                                             <input type="text" name="Gender" placeholder="Enter name">
+                                        </div>
+                                     </div>
+                                    <!-- Radio -->
+                                    
+                                    <!-- First Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                             <label>* FIRST NAME</label>
+                                             <input type="text" name="First Name" placeholder="Enter name">
+                                        </div>
+                                     </div>
+                                     <!-- Last Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                             <label>* Last NAME</label>
+                                             <input type="text" name="Last Name" placeholder="Enter name">
+                                        </div>
+                                     </div>
+                                     <div class="col-lg-6">
+                                        <div class="single-form">
+                                             <label>* NUMBER OF DEPENDANTS</label>
+                                             <input type="number" name="Number Of Dependants" placeholder="Enter Number Of Dependants">
+                                        </div>
+                                     </div>
+                                     <!-- Nice Select -->
+                                   <!-- Nice Select -->
+                                    
+                                    <!-- First Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* Email Adderess</label>
+                                            <input type="email" name="email" placeholder="Enter email">
+                                        </div>
+                                    </div>
+                                    <!-- Last Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* Phone Number</label>
+                                            <input type="number" name="phone" placeholder="Enter Number">
+                                        </div>
+                                    </div>
+                                    <!-- Nice Select -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* MARITAL STATUS</label>
+                                            <input type="text" name="Marital Status" placeholder="Enter Marital Status">
+                                        </div>
+                                    </div>
+                                    <!-- First Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* Digital Address</label>
+                                            <input type="text" name="digital_address" placeholder="digital_address">
+                                        </div>
+                                    </div>
+                                    <!-- TOWN/CITY-->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* TOWN/CITY</label>
+                                            <input type="text" name="town/city" placeholder="Enter city">
+                                        </div>
+                                    </div>
+                                    <!-- Street Address -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* STREET</label>
+                                            <input type="text" name="street_name" placeholder="Enter Street Address">
+                                        </div>
+                                    </div>
+                                    <!-- HOUSE NAME/NUMBER -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* HOUSE NAME/NUMBER</label>
+                                            <input type="text" name="house_number" placeholder="Enter House Name">
+                                        </div>
+                                    </div>
+                                    <!-- Nice Select -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* Job STATUS</label>
+                                            <input type="text" name="Job Status" placeholder="Enter Job Status">
+                                        </div>
+                                    </div>
+                                    
+                                    <!--  EMPLOYMENT INDUSTRY -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* EMPLOYMENT INDUSTRY</label>
+                                            <input type="text" name="employment_industry" placeholder="Enter INDUSTRY">
+                                        </div>
+                                    </div>
+                                    <!-- Last Name -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* EMPLOYER NAME</label>
+                                            <input type="text" name="employer_name" placeholder="Enter name">
+                                        </div>
+                                    </div>
+                                    <!--PHONE NUMBER -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* WORK PHONE NUMBER</label>
+                                            <input type="number" name="work_phone_number" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <!--  MONTHLY INCOME -->
+                                    <div class="col-lg-6">
+                                        <div class="single-form">
+                                            <label>* MONTHLY INCOME ($)</label>
+                                            <input type="text" name="monthly_income" placeholder="Enter name">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="button button-contactForm boxed-btn">APPLY NOW</button>
+                            </form>
+                            <!-- End From -->
+                            <!-- Form btn -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Apply Area End -->
+
+    </main>
+    {% endblock content %}

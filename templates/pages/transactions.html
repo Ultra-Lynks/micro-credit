@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %}
+{% load i18n static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block overlay %}
+  <div class="min-height-300 bg-primary position-absolute w-100"></div>
+{% endblock overlay %}
+
+{% block content %}
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div class="card-header pb-0">
+            <h6>transactions overview</h6>
+          </div>
+          <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+              <table id="transactions-table" class="table align-items-center mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Amount</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Customer</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Reference</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Channel</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Paid On</th>
+                    <th class="text-secondary opacity-7"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                      <!-- transactions.html -->
+                      <!-- transactions.html -->
+                      <!-- transactions.html -->
+                      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script>
+                          $(document).ready(function() {
+                            $.ajax({
+                              url: '/paystack/transactions/',
+                              type: 'GET',
+                              success: function(data) {
+                                // Handle the received transactions data
+                                var transactions = data.transactions;
+
+                                // Get the transactions table body
+                                var transactionsTableBody = $('#transactions-table tbody');
+
+                                // Loop through the transactions and add rows to the table
+                                $.each(transactions, function(index, transaction) {
+                                  var row = $('<tr>');
+                                  row.append($('<td>').text(transaction.amount));
+                                  row.append($('<td>').text(transaction.customer));
+                                  row.append($('<td>').text(transaction.reference));
+                                  row.append($('<td>').text(transaction.channel));
+                                  row.append($('<td>').text(transaction.paid_on));
+                                  transactionsTableBody.append(row);
+                                });
+                              },
+                              error: function() {
+                                console.log('Failed to fetch transactions.');
+                              }
+                            });
+                          });
+                      </script>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'includes/footer.html' %}
+  </div>
+{% endblock content %}

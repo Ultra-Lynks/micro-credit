@@ -1,0 +1,284 @@
+{% extends "cyrus/base.html" %}
+{% load static %}
+{% block content %}
+   
+    <main>
+
+        <!-- Hero Start-->
+        <div class="hero-area2  slider-height2 hero-overly2 d-flex align-items-center ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center pt-50">
+                            <h2>About us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero End -->
+        <div class="about-low-area section-padding2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-35">
+                                <span>About Our Company</span>
+                                <h2>Building a Brighter financial Future & Good Support.</h2>
+                            </div>
+                            <p>As an MFI, CYRUS was formed with the purpose of providing social and financial solutions to the poor. To determine its vulnerability to credit risk, there is review of the policies and procedures at every stage in the lending process to determine whether they reduce delinquencies and loan losses to an acceptable level.</p>
+                            <p>These policies and procedures include the loan eligibility criteria, the application review process and authorization levels, collateral or security requirements, as well as the “carrots and sticks” used to motivate staff and compel borrowers to repay.
+                            <a href="{% url "core:apply" %}" class="btn">Apply for Loan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img ">
+                            <div class="about-font-img d-none d-lg-block">
+                                <img src="{% static "cyrus/assets/img/gallery/IMG_1766.JPG" %}" alt="" id="about">
+                            </div>
+                            <div class="about-back-img ">
+                                <img src="{% static "cyrus/assets/img/post/IMG_1255-min.JPG" %}" alt="" id="about">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Law End-->
+        <!-- Services Area Start -->
+        <div class="services-area pt-150 pb-150" data-background="{% static "cyrus/assets/img/gallery/section_bg02.jpg" %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-80">
+                            <span>Services that we are providing</span>
+                            <h2>High Performance Services For All Industries.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-work"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url "core:apply" %}">Business Loan</a></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-loan"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url "core:apply" %}">Commercial Loans</a></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-loan-1"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url "core:apply" %}">Construction Loans</a></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-like"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url "core:apply" %}">Business Loan</a></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+        <!-- Services Area End -->
+        <!-- Support Company Start-->
+        <div class="support-company-area section-padding3 fix">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="support-location-img mb-50">
+                            <img src="{% static "cyrus/assets/img/gallery/d7c29f249f6bdf4e8c9fcb0853a09a75.jpg" %}" alt="">
+                            <div class="support-img-cap">
+                                <span>Since 2014</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="right-caption">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle">
+                                <span>CREDIT UNDERWRITING PROCESS</span>
+                                <h2>We Promise Sustainable Future For You.</h2>
+                            </div>
+                            <div class="support-caption">
+                                <p>Loans are very small, short term, and unsecured, with more frequent repayments</p>
+                                <div class="select-suport-items">
+                                    <label class="single-items">The screening process ensures that the applicants are micro borrowers
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="single-items">The applicants are then registered after they pass the screening stage.
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="single-items">Loan documentation is generated largely by the Loans and Operations managers through visits to the borrower’s business and home
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="single-items">CYRUS has a highly decentralized process; hence credit approval by the field level staff depends heavily on the skill and integrity of loan officers and managers for accurate and timely information
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="single-items">Applicants whose loans have been approved are then trained in Basic Financial Management.
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Support Company End-->
+        <!-- Application Area Start -->
+        <div class="application-area pt-150 pb-140" data-background="{% static "cyrus/assets/img/gallery/section_bg03.jpg" %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle section-tittle2 text-center mb-45">
+                            <span>Apply in Three Easy Steps</span>
+                            <h2>Easy Application Process For Any Types of Loan</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <!--Hero form -->
+                        <form action="#" class="search-box">
+                            <div class="select-form">
+                                <div class="select-itms">
+                                    <select name="select" id="select1">
+                                        <option value="">Select Amount</option>
+                                        <option value="">₵120</option>
+                                        <option value="">₵700</option>
+                                        <option value="">₵750</option>
+                                        <option value="">₵250</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="select-form">
+                                <div class="select-itms">
+                                    <select name="select" id="select1">
+                                        <option value="">Duration Month</option>
+                                        <option value="">7 Days</option>
+                                        <option value="">10 Days</option>
+                                        <option value="">14 Days Days</option>
+                                        <option value="">20 Days</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="Return Amount">
+                            </div>
+                            <div class="search-form">
+                                <a href="{% url "core:apply" %}">Apply for Loan</a>
+                            </div>	
+                        </form>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Application Area End -->
+        <!--Team Ara Start -->
+        <div class="home-blog-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>How to repay your Loan</span>
+                            <h2>Follow the below quick Steps</h2>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- single-david -->
+                        <div class="single-blogs mb-30">
+                            <div class="blog-images">
+                                <img src="{% static "cyrus/assets/img/gallery/photo_2024-01-29_21-09-48.jpg" %}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- single-david -->
+                        <div class="single-blogs mb-30">
+                            <div class="blog-images">
+                                <img src="{% static "cyrus/assets/img/gallery/footer_bg.jpg" %}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--Team Ara Start -->
+        <div class="home-blog-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Loan Process</span>
+                            <h2>Loan Process</h2>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- single-david -->
+                        <div class="single-blogs mb-30">
+                            <div class="blog-images">
+                                <img src="{% static "cyrus/assets/img/gallery/photo_2024-01-29_21-09-42-removebg-preview.png" %}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- single-david -->
+                        <div class="single-blogs mb-30">
+                            <div class="blog-images">
+                                <img src="{% static "cyrus/assets/img/gallery/photo_2024-01-29_21-09-39-removebg-preview.png" %}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Ara End -->
+
+    </main>
+    {% endblock content %}
