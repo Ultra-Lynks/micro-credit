@@ -5597,6 +5597,26 @@ hr {
     }
 }
 
+.application-area2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .application-area2 img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 575px) {
+    .application-area2 img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 
 /* line 17, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
 
@@ -5614,14 +5634,12 @@ hr {
 }
 
 @media (max-width: 575px) {
-    /* line 21, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form {
         width: 100%;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 21, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form {
         width: 50%;
     }
@@ -5643,7 +5661,6 @@ hr {
 }
 
 @media (max-width: 575px) {
-    /* line 29, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form .nice-select {
         margin-bottom: 20px;
         padding-left: 25px;
@@ -5651,7 +5668,6 @@ hr {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 29, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form .nice-select {
         margin-bottom: 20px;
         padding-left: 25px;
@@ -5702,21 +5718,18 @@ hr {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 63, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form .nice-select::before {
         top: 38%;
     }
 }
 
 @media (max-width: 575px) {
-    /* line 63, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form .nice-select::before {
         display: none;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 63, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .select-form .nice-select::before {
         background: unset;
     }
@@ -5732,14 +5745,12 @@ hr {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 86, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .input-form {
         width: 50%;
     }
 }
 
 @media (max-width: 575px) {
-    /* line 86, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .input-form {
         width: 100%;
     }
@@ -5760,14 +5771,12 @@ hr {
 }
 
 @media (max-width: 575px) {
-    /* line 96, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .input-form input {
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 96, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .input-form input {
         padding: 9px 5px 9px 22px;
         margin-bottom: 20px;
@@ -5782,7 +5791,6 @@ hr {
 }
 
 @media (max-width: 575px) {
-    /* line 112, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .input-form input::placeholder {
         font-size: 13px;
     }
@@ -5797,14 +5805,12 @@ hr {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 121, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .search-form {
         width: 50%;
     }
 }
 
 @media (max-width: 575px) {
-    /* line 121, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_application.scss */
     .application-area2 form.search-box .search-form {
         width: 100%;
     }
