@@ -5816,7 +5816,7 @@ hr {
 .application-area2 form.search-box .search-form a {
     border: 5px solid #fff;
     width: 100%;
-    height: 60px;
+    height: 100%;
     line-height: 1;
     text-align: center;
     color: #fff;
