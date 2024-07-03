@@ -88,8 +88,6 @@ paystack==1.5.0
 platformdirs==4.1.0
 pluggy==1.0.0
 prompt-toolkit==3.0.39
-psycopg2==2.9.3
-psycopg2-binary==2.9.3
 py==1.11.0
 pyasn1==0.4.8
 pycodestyle==2.8.0
