@@ -37,10 +37,10 @@ SWOOVE_LIVE_API_KEY = "a4a186fa-3e83-4ad0-b6c5-eff14860ec6c"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.cyrusfinance.com','cyrusfinance.com', '93.188.162.113','https://*.127.0.0.1']
+ALLOWED_HOSTS = ['www.cyrusfinance.com','cyrusfinance.com', '93.188.162.113','https://*.127.0.0.1', '.vercel.app', '.now.sh']
 
 # https://groups.google.com/g/django-developers/c/W_RiCsguaSU/?pli=1
-CSRF_TRUSTED_ORIGINS = ['https://www.cyrusfinance.com','https://cyrusfinance.com','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://www.cyrusfinance.com','https://cyrusfinance.com','https://*.127.0.0.1', '.vercel.app', '.now.sh']
 
 # Application definition
 
